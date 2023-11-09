@@ -1,0 +1,120 @@
+@import url("https://fonts.google.com/specimen/Roboto");
+body {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.signup {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28rem;
+  width: 45rem;
+  border-radius: 20px;
+}
+.imgsignup {
+  height: 25rem;
+}
+.innerdiv {
+  font-family: "Roboto", sans-serif;
+  width: 25rem;
+}
+.eminput {
+  width: 20rem;
+  height: 2.2rem;
+  padding-left: 0.8rem;
+  font-size: 1rem;
+}
+.errorinput {
+  background-color: lightcoral;
+  color: red;
+  border-color: red;
+}
+.errorinput:checked {
+  border-color: red;
+}
+.innerdiv button {
+  margin-top: 0.9rem;
+  width: 21.2rem;
+  height: 2.4rem;
+  color: white;
+  background-color: hsl(235, 18%, 26%);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+  .signup {
+    flex-direction: column-reverse;
+    height: 50rem;
+    width: 28rem;
+    justify-content: start;
+  }
+  .imgsignup {
+    height: 20rem;
+  }
+  .innerdiv {
+    width: 22rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .innerdiv {
+    width: 20rem;
+  }
+  .signup p {
+    font-size: small;
+  }
+  .eminput {
+    width: 16.8rem;
+  }
+  .innerdiv button {
+    width: 18rem;
+  }
+}
+.success {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 22rem;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.innersuc {
+  width: 17rem;
+}
+.dismissbtn {
+  margin-top: 0.9rem;
+  width: 19.5em;
+  height: 2.4rem;
+  color: white;
+  background-color: hsl(235, 18%, 26%);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.dismissbtn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+@media screen and (max-width: 350px) {
+  .success {
+    width: 20rem;
+    height: 27rem;
+  }
+  .innersuc {
+    width: 15rem;
+  }
+}
