@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import listsvg from "../../newsletter/src/assets/icon-list.svg";
-import iconsuccess from "../../newsletter/src/assets/icon-success.svg";
-import signup from "../../newsletter/src/assets/illustration-sign-up-desktop.svg";
+import listsvg from "../src/assets/icon-list.svg";
+import iconsuccess from "../src/assets/icon-success.svg";
+import signup from "../src/assets/illustration-sign-up-desktop.svg";
 function App() {
   const [em, setem] = useState("");
   const [err, seterr] = useState(0);
